@@ -32,16 +32,16 @@ public class Mhe {
             for (int j = 0; j <iL.getWidth(); j++) {
                 int srPix=iL.getRGB(o, j);
                 Color c = new Color(srPix);
-                int r= c.getRed();
-                int g=c.getBlue();
-                int b= c.getGreen();
+                
+                String r= Integer.toHexString(c.getRed()).toUpperCase();
+                String g=Integer.toHexString(c.getBlue()).toUpperCase();
+                String b= Integer.toHexString(c.getGreen()).toUpperCase();
                 System.out.print("$"+b+g+r+",");
             }
             System.out.println(" ");
         
         }
         
-
     }
     
 }
